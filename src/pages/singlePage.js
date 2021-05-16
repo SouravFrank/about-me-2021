@@ -5,59 +5,29 @@ import IntroText from "../components/introText";
 import StickyNav from "../components/stickyNav";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import RoadMap from "../components/roadMap";
+import ScrollButton from "../components/scrollToTop";
+import DownloadResume from "../components/downloadCV";
+import { HeaderBg, FooterBg } from "../components/background";
 import "../styles/intro.css";
 
 class SinglePage extends Component {
   render() {
     return (
       <div>
-        <div
-          style={{
-            height: "0px",
-            width: "0px",
-            borderRight: "85vw solid white",
-            borderTop: "100vh solid #aaa0ff",
-          }}
-        ></div>
+        <HeaderBg />
         <HeaderRoutes />
         <StickyNav />
         <IntroPic />
         <IntroText />
+
+        <RoadMap />
+        <DownloadResume />
         <Skills />
         <Projects />
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0,
-            right: "2%",
-            width: 100,
-            height: 100,
-            backgroundColor: "turquoise",
-          }}
-        >
-          V
-        </div>
-        <div style={{ height: 1000 }}>
-          <a
-            href="https://drive.google.com/uc?export=download&id=1kjqseWcyDFxluUQKq46Hfonj1hc5B_Mo"
-            download="cv.pdf"
-          >
-            Download
-          </a>
-          <h1>
-            https://drive.google.com/file/d/1kjqseWcyDFxluUQKq46Hfonj1hc5B_Mo/view?usp=sharing
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </h1>
-        </div>
-        <div></div>
+        <ScrollButton />
+        <FooterBg />
+        
       </div>
     );
   }

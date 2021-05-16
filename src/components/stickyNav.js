@@ -1,17 +1,23 @@
-import { AccessAlarmRounded } from "@material-ui/icons";
-import React from "react";
+import React, { useState } from "react";
+import ListIcon from "@material-ui/icons/List";
+import scrollIdentifier from "../utils/scrollIdentifier";
 import "../styles/navbar.css";
 
 function StickyNav(props) {
+  const [displayNav, setdisplayNav] = useState(false);
+
+  const toggleVisible = () => {
+    setdisplayNav(scrollIdentifier());
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+
   return (
-    <div className="nav-container">
-      <div style={{ width: 100, height: 100, backgroundColor: "yellowgreen" }}>
-        <AccessAlarmRounded />
-      </div>
-      <div style={{ width: 100, height: 100, backgroundColor: "wheat" }}>2</div>
-      <div style={{ width: 100, height: 100, backgroundColor: "violet" }}>
-        3
-      </div>
+    <div
+      style={{ display: displayNav ? "inline" : "none" }}
+      className="nav-container"
+    >
+      <ListIcon />
     </div>
   );
 }

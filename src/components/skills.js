@@ -68,7 +68,7 @@ function Skills(props) {
   return (
     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
       {skillsArray.map((item) => (
-        <RenderItem props={item} />
+        <RenderItem key={item.title} props={item} />
       ))}
     </div>
   );

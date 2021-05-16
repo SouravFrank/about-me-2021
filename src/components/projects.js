@@ -3,7 +3,7 @@ import '../styles/projects.css'
 
 function Projects() {
   return (
-    <div class="horizontal-scroll-wrapper squares">
+    <div className="horizontal-scroll-wrapper squares">
     <div>item 1</div>
     <div>item 2</div>
     <div>item 3</div>

@@ -30,7 +30,7 @@ function IntroText(props) {
           }}
         ></p>
 
-        <div class="meter">
+        <div className="meter">
           <span></span>
         </div>
         <p
