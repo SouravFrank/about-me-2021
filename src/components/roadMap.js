@@ -1,9 +1,11 @@
 import { timelineData } from "../utils/timelineData";
 import React, { useEffect } from "react";
 import "../styles/roadMap.css";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CakeIcon from "@material-ui/icons/Cake";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import SchoolIcon from "@material-ui/icons/School";
 
 const RoadMap = (props) => {
   const items = timelineData;
@@ -65,15 +67,19 @@ const RoadMap = (props) => {
   return (
     <div style={{ margin: 100 }}>
       <div class="typewriter">
-        <p style={{ fontSize: 24 }}> Journey So Far... </p>
+        <p> Journey So Far... </p>
       </div>
-    
+
       <div className="timeline">
         <ul>
           {items.map((te, idx) => {
+            const RenderIcon = () => {
+              const TagName = te.icon;
+              return <TagName />;
+            };
             return (
               <li key={`${te.title}_${te.date}`}>
-                <div className="content">
+                <div className="content title">
                   <h3
                     className={`animate ${
                       idx % 2 === 0 ? "slide_from_left" : "slide_from_right"
@@ -82,7 +88,7 @@ const RoadMap = (props) => {
                     {te.title}
                   </h3>
                   <p
-                    className={`animate ${
+                    className={`animate desc ${
                       idx % 2 === 0 ? "slide_from_left" : "slide_from_right"
                     }`}
                   >
@@ -90,7 +96,7 @@ const RoadMap = (props) => {
                   </p>
                 </div>
                 <div className="point">
-                  <img />
+                  <RenderIcon />
                 </div>
                 <div
                   className={`time animate ${

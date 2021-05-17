@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: url("./assets/cursor-normal.png"), auto;
+  background-color: #333;  /*To work in night */
 }
 
 body::-webkit-scrollbar {

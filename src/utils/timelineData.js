@@ -3,32 +3,38 @@ export const timelineData = [
     title: "Birth",
     // description: "Desc 1",
     date: "23 June 1998",
+    icon: "CakeIcon",
   },
   {
-    title: "Title 2",
-    description:
-      "Desc.",
+    title: "10th",
+    description: "Desc.",
     date: "2 March 1994",
+    icon: 'SchoolIcon'
   },
   {
-    title: "Title 3",
+    title: "12th",
     description: "Desc 3",
     date: "2 March 1995",
+    icon: 'SchoolIcon'
+
   },
   {
-    title: "Title 4",
+    title: "B.Tech",
     description: "Desc 4",
     date: "2 March 1996",
+    icon: 'SchoolIcon'
+
   },
   {
-    title:
-      "Title 5.",
+    title: "TCS",
     description: "Desc 5",
     date: "2 March 1997",
+    icon: 'SchoolIcon'
   },
   {
-    title: "Title 6",
+    title: "DevOps",
     description: "Desc 6",
     date: "2 March 1998",
+    icon: 'BusinessCenterIcon'
   },
 ];

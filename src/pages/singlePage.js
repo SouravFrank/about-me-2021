@@ -27,7 +27,6 @@ class SinglePage extends Component {
         <Projects />
         <ScrollButton />
         <FooterBg />
-        
       </div>
     );
   }
