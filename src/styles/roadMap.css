@@ -1,0 +1,180 @@
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* The middle stick */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  height: 90%;
+  width: 2px;
+  left: 50%;
+  background-color: #4a4a4a;
+}
+
+/* center pointing */
+.timeline ul li {
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* center point style */
+.point {
+  min-width: 20px;
+  height: 20px;
+  background-color: #aaa0ff;
+  border-radius: 100%;
+  position: relative;
+  left: -19px;
+}
+
+/* align with middle line */
+.timeline ul li .content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+  padding-left: 0;
+  text-align: end;
+  padding-right: 50px;
+}
+
+.timeline ul li:nth-child(odd) .date {
+  padding-right: 10px;
+}
+
+.timeline ul li:nth-child(even) .content {
+  padding-right: 0;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.timeline ul li:nth-child(even) .date {
+  padding-left: 10px;
+}
+
+.timeline ul li .date {
+  width: 50%;
+  padding: 0 20px;
+  font-weight: normal;
+}
+
+/* style of date box */
+.timeline ul li .date h4 {
+  background-color: #e1ccec;
+  width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* style of title box */
+.timeline ul li .content .title {
+  padding: 10px 20px;
+  background-color: #a9a0ffd5;
+  margin-bottom: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* style of desc box */
+.timeline ul li .content .desc {
+  padding: 10px 20px;
+  background-color: #e1d9ec;
+  margin-top: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+  float: right;
+}
+
+/* /// Responsive /// */
+
+@media (max-width: 800px) {
+  .point {
+    min-width: 15px;
+    height: 15px;
+  }
+
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .point {
+    min-width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  p {
+    padding: 10px !important;
+  }
+}
+
+/* /// Typewriter /// */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+  font-size: 42px;
+  width: 320px;
+  color: #4e4e4e;
+  font-weight: bold;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #4e4e4e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 2.5s steps(60, end), blink-caret 0.9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 320px;
+    opacity: 1;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+    scale: 0;
+  }
+  50% {
+    border-color: #aaa0ff;
+    scale: 0.8;
+  }
+}
