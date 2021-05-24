@@ -1,27 +1,28 @@
 import React from "react";
+import { myRoutes } from "../utils/config";
 import "../styles/headerRoutes.css";
 
 const RenderItem = ({ item }) => {
   const { title, click } = item;
-  return <li className="list-item">{title}</li>;
+  return (
+    <li className="list-item">
+      <a href={click}>
+        {title}
+      </a>
+    </li>
+  );
 };
 
-function HeaderRoutes(props) {
-  const routeList = [
-    { title: "About Me", click: "" },
-    { title: "Skills ", click: "" },
-    { title: "Projects ", click: "" },
-    { title: "Download Resume ", click: "" },
-  ];
+const HeaderRoutes = () => {
   return (
     <div className="header-route-container">
       <ul className="header-route-ul">
-        {routeList.map((item) => (
+        {myRoutes.map((item) => (
           <RenderItem key={item.title} item={item} />
         ))}
       </ul>
     </div>
   );
-}
+};
 
 export default HeaderRoutes;
