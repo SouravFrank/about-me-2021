@@ -8,70 +8,49 @@ import HtmlLogo from "../assets/html-5.svg";
 import CssLogo from "../assets/css-3.svg";
 import LinuxLogo from "../assets/linux-tux.svg";
 import GitIcon from "../assets/git-icon.svg";
+import "../styles/skills.css";
+import { mySkills } from "../utils/config";
+import Typewriter from "./common/typewritter";
 
-function RenderItem({ props }) {
-  const { title, src } = props;
+const keysToSVG = {
+  ReactLogo: ReactLogo,
+  NodeLogo: NodeLogo,
+  ReduxLogo: ReduxLogo,
+  MaterialUILogo: MaterialUILogo,
+  SwaggerLogo: SwaggerLogo,
+  HtmlLogo: HtmlLogo,
+  CssLogo: CssLogo,
+  LinuxLogo: LinuxLogo,
+  GitIcon: GitIcon,
+};
+
+const RenderItem = ({ props }) => {
+  const { title, src, description } = props;
+
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        textAlign: "center",
-        alignItems: "center",
-        // justifyContent: "center",
-        width: "25vw",
-        height: 80,
-        backgroundColor: "tomato",
-        margin: 20,
-        padding: 10,
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: "white",
-          border: "2px solid white",
-          borderRadius: 50,
-          padding: 5,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <img
-          style={{
-            width: 50,
-            height: 50,
-            // backgroundColor: "red",
-            padding: 5,
-            overflow: "hidden",
-          }}
-          src={src}
-        />
+    <div className="skillBox">
+      <div className="skillIconBall">
+        <img class="skillSVG" alt={title} src={keysToSVG[src]} />
       </div>
-      <p style={{ fontSize: 18 }}>{title}</p>
+      <div className="SkillDesc">
+        <span className="SkillDescTitle">{title}</span>
+        <span className="SkillDescText">{description}</span>
+      </div>
     </div>
   );
-}
+};
 
-function Skills(props) {
-  const skillsArray = [
-    { title: "React JS", src: ReactLogo },
-    { title: "React Native", src: ReactLogo },
-    { title: "Node JS", src: NodeLogo },
-    { title: "Redux", src: ReduxLogo },
-    { title: "Material UI", src: MaterialUILogo },
-    { title: "Swagger", src: SwaggerLogo },
-    { title: "HTML", src: HtmlLogo },
-    { title: "CSS", src: CssLogo },
-    { title: "Linux", src: LinuxLogo },
-    { title: "Git", src: GitIcon },
-  ];
+const Skills = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
-      {skillsArray.map((item) => (
-        <RenderItem key={item.title} props={item} />
-      ))}
+    <div id='skills' className="skillsContainer">
+      <Typewriter text="Checkout my Skills..." />
+      <div className="showSkill">
+        {mySkills.map((item) => (
+          <RenderItem key={item.title} props={item} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default Skills;

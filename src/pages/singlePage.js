@@ -20,8 +20,8 @@ class SinglePage extends Component {
         <StickyNav />
         <IntroPic />
         <IntroText />
-
         <RoadMap />
+
         <DownloadResume />
         <Skills />
         <Projects />

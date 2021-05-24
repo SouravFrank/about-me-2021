@@ -1,13 +1,49 @@
-import { timelineData } from "../utils/timelineData";
 import React, { useEffect } from "react";
-import "../styles/roadMap.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CakeIcon from "@material-ui/icons/Cake";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SchoolIcon from "@material-ui/icons/School";
+import { timelineData } from "../utils/timelineData";
+import "../styles/roadMap.css";
+import Typewriter from "./common/typewritter";
 
-const RoadMap = (props) => {
+const KeysToComponentMap = {
+  cake: CakeIcon,
+  work: BusinessCenterIcon,
+  study: SchoolIcon,
+};
+
+const RenderIcon = ({ props }) => {
+  if (typeof KeysToComponentMap[props.icon] !== "undefined") {
+    return React.createElement(KeysToComponentMap[props.icon], {
+      className: "pointIcon",
+    });
+  }
+};
+
+const PrimaryCard = ({ te, idx }) => {
+  return (
+    <>
+      <div className={`container`}>
+        <div
+          className={`card animate ${
+            idx % 2 === 0 ? "slide_from_left" : "slide_from_right"
+          }`}
+        >
+          <p className="title">{te.title}</p>
+          <p className="date">{te.date}</p>
+          <p className="desc">{te.description}</p>
+        </div>
+        <div className="pointContainer">
+          <RenderIcon props={te} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+const RoadMap = () => {
   const items = timelineData;
 
   const animateFromTo = (elem, direction) => {
@@ -65,49 +101,16 @@ const RoadMap = (props) => {
   }, []);
 
   return (
-    <div style={{ margin: 100 }}>
-      <div class="typewriter">
-        <p> Journey So Far... </p>
-      </div>
+    <div id='journey' style={{ margin: 100 }}>
+      <Typewriter text='Journey So Far...' />
 
       <div className="timeline">
         <ul>
-          {items.map((te, idx) => {
-            const RenderIcon = () => {
-              const TagName = te.icon;
-              return <TagName />;
-            };
-            return (
-              <li key={`${te.title}_${te.date}`}>
-                <div className="content title">
-                  <h3
-                    className={`animate ${
-                      idx % 2 === 0 ? "slide_from_left" : "slide_from_right"
-                    }`}
-                  >
-                    {te.title}
-                  </h3>
-                  <p
-                    className={`animate desc ${
-                      idx % 2 === 0 ? "slide_from_left" : "slide_from_right"
-                    }`}
-                  >
-                    {te.description}
-                  </p>
-                </div>
-                <div className="point">
-                  <RenderIcon />
-                </div>
-                <div
-                  className={`time animate ${
-                    idx % 2 === 0 ? "slide_from_right" : "slide_from_left"
-                  } date`}
-                >
-                  <h4>{te.date}</h4>
-                </div>
-              </li>
-            );
-          })}
+          {items.map((te, idx) => (
+            <li key={`${te.title}_${te.date}`}>
+              <PrimaryCard te={te} idx={idx} />
+            </li>
+          ))}
         </ul>
       </div>
     </div>
