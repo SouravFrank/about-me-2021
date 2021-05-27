@@ -11,20 +11,20 @@
   text-align: right;
 }
 
-.list-item a {
-  text-decoration: none;
-  color: white;
-}
-
 .list-item {
   list-style: none;
   margin: 10px;
   font-size: 18px;
   font-weight: 600;
-  transition: 0.4s;
 }
 
-.list-item:hover {
+.list-item a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.list-item :hover {
   text-decoration: underline;
   font-weight: bold;
   cursor: url("../assets/cursor-link.png"), auto;

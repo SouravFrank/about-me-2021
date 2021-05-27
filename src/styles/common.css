@@ -1,4 +1,24 @@
 /* -------------------------------------------------------------------------- */
+/*                         Header & Footer Backgrounds                        */
+/* -------------------------------------------------------------------------- */
+.headerBg {
+  height: 0;
+  width: 0;
+  border-right: 85vw solid transparent;
+  border-top: 100vh solid #aaa0ff;
+}
+
+.footerBg {
+  height: 0;
+  width: 0;
+  float: right;
+  right: -20px;
+  border-left: 85vw solid transparent;
+  border-bottom: 80vh solid #aaa0ff;
+  z-index: ;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                 Typewriter                                 */
 /* -------------------------------------------------------------------------- */
 

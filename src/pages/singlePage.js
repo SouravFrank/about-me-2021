@@ -21,11 +21,11 @@ class SinglePage extends Component {
         <IntroPic />
         <IntroText />
         <RoadMap />
-
         <DownloadResume />
         <Skills />
+
         <Projects />
-        <ScrollButton />
+        {/* <ScrollButton /> */}
         <FooterBg />
       </div>
     );
