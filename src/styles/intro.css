@@ -55,13 +55,13 @@
 }
 @keyframes changeHeader {
   0% {
-    content: "Sourav Sadhukhan";
+    content: "Satyajit Choudhary";
   }
   99% {
-    content: "Graphics Designer";
+    content: "Full Stack Developer";
   }
   100% {
-    content: "Sourav Sadhukhan";
+    content: "Satyajit Choudhary";
   }
 }
 
@@ -71,13 +71,13 @@
 }
 @keyframes changeDesc {
   0% {
-    content: "I am a full-stack web developer and also a graphics designer who loves to design via CSS or Photoshop.";
+    content: "I'm a full-stack web developer who enjoys adding new features and interfaces to existing applications.";
   }
   99% {
-    content: "My main areas of expertise include Javascript, Typescript, Node.js, HTML, CSS, php and Python.";
+    content: "My main areas of expertise include React, Javascript, Typescript, Node JS, HTML, CSS.";
   }
   100% {
-    content: "I am a full-stack web developer and also a graphics designer who loves to design via CSS or Photoshop.";
+    content: "I'm a full-stack web developer who enjoys adding new features and interfaces to existing applications.";
   }
 }
 
