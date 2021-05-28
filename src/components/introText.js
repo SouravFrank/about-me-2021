@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/introduction.css";
+import "../styles/intro.css";
 
 function IntroText(props) {
   return (

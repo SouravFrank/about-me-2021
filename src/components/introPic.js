@@ -1,18 +1,13 @@
 import React from "react";
+import "../styles/introPic.css";
 import logo from "../assets/myphoto.jpg"
-
 function IntroPic(props) {
   return (
-    <div style={{ position: "absolute", left: "15vw", top: "20vh" }}>
+    <div className="image-conatainer">
       <img
         src={logo}
-        style={{
-          height: 200,
-          width: 200,
-          overflow: "hidden",
-          border: "5px solid white",
-          borderRadius: 150,
-        }}
+        className="myPic"
+        alt="my-pic"
       />
     </div>
   );

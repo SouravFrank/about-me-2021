@@ -1,15 +1,28 @@
-import React from 'react';
+import React from "react";
+import { myRoutes } from "../utils/config";
+import "../styles/headerRoutes.css";
 
-function HeaderRoutes(props) {
-    return (
-        <div style={{ display: "inline", position: 'absolute', left: 10, top: 25 }}>
-            <ul style={{ display: "inline" }}>
-              <li style={{ display: "inline", margin: 10 }}>my projects</li>
-              <li style={{ display: "inline", margin: 10 }}>about me</li>
-              <li style={{ display: "inline", margin: 10 }}>contact me</li>
-            </ul>
-          </div>
-    );
-}
+const RenderItem = ({ item }) => {
+  const { title, click } = item;
+  return (
+    <li className="list-item">
+      <a href={click}>
+        {title}
+      </a>
+    </li>
+  );
+};
+
+const HeaderRoutes = () => {
+  return (
+    <div className="header-route-container">
+      <ul className="header-route-ul">
+        {myRoutes.map((item) => (
+          <RenderItem key={item.title} item={item} />
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default HeaderRoutes;
