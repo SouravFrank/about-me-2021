@@ -96,7 +96,6 @@ export const Timeline = (props) => {
               </li>
             );
           })}
-          <div style={{ clear: "both" }}></div>
         </ul>
       </div>
     </div>
