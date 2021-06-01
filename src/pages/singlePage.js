@@ -9,24 +9,41 @@ import RoadMap from "../components/roadMap";
 import ScrollButton from "../components/scrollToTop";
 import DownloadResume from "../components/downloadCV";
 import { HeaderBg, FooterBg } from "../components/background";
-import "../styles/intro.css";
+import ContactMe from "../components/contactMe";
+
+import "../styles/common.css";
 
 class SinglePage extends Component {
   render() {
     return (
       <div>
+        <StickyNav />
+        {/* <section> */}
         <HeaderBg />
         <HeaderRoutes />
-        <StickyNav />
         <IntroPic />
         <IntroText />
+        {/* </section> */}
+        {/* <section id="roadmap"> */}
         <RoadMap />
+        {/* </section>
+        <section> */}
         <DownloadResume />
+        {/* </section>
+        <section> */}
         <Skills />
-
-        <Projects />
-        {/* <ScrollButton /> */}
+        {/* </section>
+        <section> */}
+        {/* <Projects /> */}
+        {/* </section> */}
+        <ScrollButton />
+        {/* <section> */}
+        <ContactMe />
+        {/* <SocialMedia /> */}
+        {/* </section>
+        <section> */}
         <FooterBg />
+        {/* </section> */}
       </div>
     );
   }

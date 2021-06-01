@@ -7,6 +7,10 @@
   width: 80%;
 }
 
+#journey {
+  margin: 100px;
+}
+
 /* The middle stick */
 .timeline::before {
   content: "";
@@ -109,7 +113,6 @@
 .timeline .card .desc {
   font-size: 1rem;
   margin: 0px 0px 10px;
-
 }
 
 .timeline ul li:nth-child(even) {
