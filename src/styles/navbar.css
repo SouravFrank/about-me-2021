@@ -89,7 +89,7 @@
   top: 1em;
   right: 1em;
   z-index: -2;
-  background-color: hsl(4, 98%, 60%);
+  background-color: #aaa0ff;
   transition: all .3s ease;
 }
 

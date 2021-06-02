@@ -9,34 +9,41 @@ import RoadMap from "../components/roadMap";
 import ScrollButton from "../components/scrollToTop";
 import DownloadResume from "../components/downloadCV";
 import { HeaderBg, FooterBg } from "../components/background";
+import ContactMe from "../components/contactMe";
+
 import "../styles/common.css";
 
 class SinglePage extends Component {
   render() {
     return (
       <div>
-        <div className="element">
-          <HeaderBg />
-          <HeaderRoutes />
-          <StickyNav />
-          <IntroPic />
-          <IntroText />
-        </div>
-        <div className="element"><RoadMap /></div>
-        <div className="element">
-          <DownloadResume />
-        </div>
-        <div className="element">
-          <Skills />
-        </div>
-
-        <div className="element">
-          <Projects />
-        </div>
-        {/* <ScrollButton /> */}
-        <div className="element">
-          <FooterBg />
-        </div>
+        <StickyNav />
+        {/* <section> */}
+        <HeaderBg />
+        <HeaderRoutes />
+        <IntroPic />
+        <IntroText />
+        {/* </section> */}
+        {/* <section id="roadmap"> */}
+        <RoadMap />
+        {/* </section>
+        <section> */}
+        <DownloadResume />
+        {/* </section>
+        <section> */}
+        <Skills />
+        {/* </section>
+        <section> */}
+        {/* <Projects /> */}
+        {/* </section> */}
+        <ScrollButton />
+        {/* <section> */}
+        <ContactMe />
+        {/* <SocialMedia /> */}
+        {/* </section>
+        <section> */}
+        <FooterBg />
+        {/* </section> */}
       </div>
     );
   }
