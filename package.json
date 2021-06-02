@@ -1,7 +1,7 @@
 {
-  "homepage": "http://SatyajitChoudhary.github.io/about-me",
+  "homepage": "https://souravfrank.github.io/about-me/",
   "name": "about-me",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.1",

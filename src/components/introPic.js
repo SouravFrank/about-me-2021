@@ -1,16 +1,13 @@
 import React from "react";
 import "../styles/introPic.css";
-import logo from "../assets/myphoto.jpg"
-function IntroPic(props) {
+import myPic from "../assets/myPic.jpeg";
+
+const IntroPic = (props) => {
   return (
     <div className="image-conatainer">
-      <img
-        src={logo}
-        className="myPic"
-        alt="my-pic"
-      />
+      <img src={myPic} className="myPic" alt="my-pic" />
     </div>
   );
-}
+};
 
 export default IntroPic;
