@@ -31,17 +31,17 @@ function StickyNav(props) {
           toggleActive ? "active" : ""
         } circular-menu circular-menu-left`}
       >
-        <a class="floating-btn" onClick={onActiveToggle}>
+        <span className="floating-btn" onClick={onActiveToggle}>
           <ListIcon color="primary"  class="iconSize" />
-        </a>
+        </span>
 
-        <menu class="items-wrapper">
-          <a href="#" class="menu-item fa fa-home"></a>
-          <a href="#" class="menu-item fa fa-user"></a>
-          <a href="#" class="menu-item fa fa-pie-chart"></a>
-          <a href="#" class="menu-item fa fa-cog"></a>
-          <a href="#" class="menu-item fa fa-pie-chart"></a>
-          <a href="#" class="menu-item fa fa-cog"></a>
+        <menu className="items-wrapper">
+          <a href="#" className="menu-item fa fa-home"></a>
+          <a href="#" className="menu-item fa fa-user"></a>
+          <a href="#" className="menu-item fa fa-pie-chart"></a>
+          <a href="#" className="menu-item fa fa-cog"></a>
+          <a href="#" className="menu-item fa fa-pie-chart"></a>
+          <a href="#" className="menu-item fa fa-cog"></a>
         </menu>
       </div>
     </div>

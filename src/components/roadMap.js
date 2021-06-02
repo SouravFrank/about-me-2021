@@ -102,7 +102,7 @@ const RoadMap = () => {
 
   return (
     <div id='journey' style={{ margin: 100 }}>
-      <Typewriter text='Journey So Far...' />
+      <Typewriter text={['Journey So Far...']} />
 
       <div className="timeline">
         <ul>
