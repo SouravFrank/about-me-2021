@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Typewriter from "./common/typewritter";
 import SocialMedia from "./socialmedia";
+import PeronalInfo from "./personalInfo";
 
 import "../styles/contactMe.css";
 
-export const FormInput = ({ title, onChange, value, type, placeholder }) => {
+const FormInput = ({ title, onChange, value, type, placeholder }) => {
   const onChangeEvent = (e) => {
     onChange(e.target.value);
   };
@@ -68,11 +69,12 @@ const ContactForm = () => {
 const ContactMe = () => {
   return (
     <div id="ContactMe" className="contactMeContainer">
-      <Typewriter text="Contact Me" />
+      <Typewriter text={["Contact Me"]} />
       <p className="subHeading">Send me a message!</p>
-      <div style={{display: "flex", flexDirection: 'row'}}>
+      <div style={{ display: "flex", flexDirection: "row" }}>
         <SocialMedia />
         <ContactForm />
+        <PeronalInfo />
       </div>
     </div>
   );

@@ -43,7 +43,7 @@ const RenderItem = ({ props }) => {
 const Skills = () => {
   return (
     <div id='skills' className="skillsContainer">
-      <Typewriter text="Checkout my Skills..." />
+      <Typewriter text={["Checkout my Skills..."]} />
       <div className="showSkill">
         {mySkills.map((item) => (
           <RenderItem key={item.title} props={item} />

@@ -63,3 +63,9 @@ export const myRoutes = [
   { title: "Projects ", click: "#projects" },
   { title: "Contact Me", click: "#ContactMe" },
 ];
+
+export const myPersonalInfo = [
+  { title: "Email", value: "ssadhukhan990@gmail.com" },
+  { title: "Call", value: "+91 9038516950" },
+  { title: "Location", value: "Howrah, West Bengal, India" },
+];
