@@ -20,6 +20,10 @@
   position: relative;
 }
 
+.list-item a {
+  cursor: url("../assets/cursor-link.png"), auto;
+}
+
 .list-item::after {
   position: absolute;
   content: "";
@@ -31,10 +35,9 @@
   transition: all 0.4s ease-in-out;
 }
 
-.header-route-ul:hover .list-item::after {
-  cursor: url("../assets/cursor-link.png"), auto;
-  width: 100%;
-  left: 0;
+.list-item:hover::after {
+  width: 106%;
+  left: -2.9%;
 }
 
 .list-item a {

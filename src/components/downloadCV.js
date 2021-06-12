@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import AttachFileIcon from "@material-ui/icons/AttachFile";
 import Typewriter from "./common/typewritter";
 import { downloadResumeConfig } from "../utils/config";
 import "../styles/downloadCV.css";
@@ -42,13 +41,7 @@ const DownloadResume = () => {
 
   return (
     <div id="resume" style={{ margin: "100px", position: "relative" }}>
-      <Typewriter text="Here is my Resume..." />
-      {/* <a href={fileLink} download={fileName}>
-        <div className="downloadBtn">
-          <AttachFileIcon />
-          Download Now
-        </div>
-      </a> */}
+      <Typewriter text={["Here is my Resume...", "Click to download..."]} />
       <div style={{ position: "relative", margin: 100, paddingBottom: 280 }}>
         <Download {...props} />
       </div>
