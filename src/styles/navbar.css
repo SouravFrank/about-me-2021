@@ -1,7 +1,8 @@
 .iconSize {
   width: 3em;
   height: 3em;
-  padding-top: 20%
+  padding-top: 20%;
+  fill: seashell;
 }
 .nav-container {
   position: fixed;

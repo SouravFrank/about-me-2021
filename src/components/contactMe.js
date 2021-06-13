@@ -57,8 +57,8 @@ const ContactForm = () => {
         type="textarea"
         onChange={setdesc}
       />
-      <div class="wrapper">
-        <a href="#" class="button">
+      <div className="wrapper">
+        <a href="#" className="button">
           Send Me
         </a>
       </div>

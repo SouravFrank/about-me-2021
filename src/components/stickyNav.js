@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ListIcon from "@material-ui/icons/List";
+import ExploreIcon from "@material-ui/icons/Explore";
 import scrollIdentifier from "../utils/scrollIdentifier";
 import "../styles/navbar.css";
 
@@ -27,21 +27,21 @@ function StickyNav(props) {
 
       <div
         id="circularMenu1"
-        class={`${
+        className={`${
           toggleActive ? "active" : ""
         } circular-menu circular-menu-left`}
       >
-        <a class="floating-btn" onClick={onActiveToggle}>
-          <ListIcon color="primary"  class="iconSize" />
+        <a className="floating-btn" onClick={onActiveToggle}>
+          <ExploreIcon color="primary" class="iconSize" />
         </a>
 
-        <menu class="items-wrapper">
-          <a href="#" class="menu-item fa fa-home"></a>
-          <a href="#" class="menu-item fa fa-user"></a>
-          <a href="#" class="menu-item fa fa-pie-chart"></a>
-          <a href="#" class="menu-item fa fa-cog"></a>
-          <a href="#" class="menu-item fa fa-pie-chart"></a>
-          <a href="#" class="menu-item fa fa-cog"></a>
+        <menu className="items-wrapper">
+          <a href="#" className="menu-item fa fa-home"></a>
+          <a href="#" className="menu-item fa fa-user"></a>
+          <a href="#" className="menu-item fa fa-pie-chart"></a>
+          <a href="#" className="menu-item fa fa-cog"></a>
+          <a href="#" className="menu-item fa fa-pie-chart"></a>
+          <a href="#" className="menu-item fa fa-cog"></a>
         </menu>
       </div>
     </div>
