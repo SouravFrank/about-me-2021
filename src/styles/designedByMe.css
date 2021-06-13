@@ -1,0 +1,26 @@
+.designMeContainer {
+  /* float: right; */
+  position: absolute;
+  right: 5vw;
+  bottom: -70vh;
+}
+
+.myLogo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  left: -10px
+}
+
+.dsnMeUnderline {
+    width: 350px;
+    height: 2px;
+    background: seashell;
+}
+
+.dsnMeDesc {
+}
+
+.dsnMeName {
+}

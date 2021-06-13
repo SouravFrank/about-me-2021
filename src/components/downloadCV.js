@@ -16,18 +16,18 @@ const Download = ({ checked, setchecked, downloadResumeConfig }) => {
   return (
     <div id="ms-container">
       <label for="ms-download">
-        <div class="ms-content">
-          <div class="ms-content-inside">
+        <div className="ms-content">
+          <div className="ms-content-inside">
             <input
               onChange={downloadFile}
               value={checked}
               type="checkbox"
               id="ms-download"
             />
-            <div class="ms-line-down-container">
-              <div class="ms-line-down"></div>
+            <div className="ms-line-down-container">
+              <div className="ms-line-down"></div>
             </div>
-            <div class="ms-line-point"></div>
+            <div className="ms-line-point"></div>
           </div>
         </div>
       </label>

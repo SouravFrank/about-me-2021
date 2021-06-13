@@ -4,6 +4,8 @@ import { myPersonalInfo } from "../utils/config";
 import CallIcon from "@material-ui/icons/Call";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import "../styles/personalInfo.css";
+import { mapURI } from "../utils/config";
+// import SimpleMap from "./googleMap";
 
 const iconMap = {
   Email: MailOutlineIcon,
@@ -24,8 +26,8 @@ const RenderInfoCard = ({ title, value }) => {
     <div className="showInfoBox">
       <RenderIcon icon={title} />
       <div className="showMoreInfoBox">
-        <span id='title'>{title}</span>
-        <span id='value'>{value}</span>
+        <span id="title">{title}</span>
+        <span id="value">{value}</span>
       </div>
     </div>
   );
@@ -39,7 +41,16 @@ const PeronalInfo = () => {
           <RenderInfoCard {...item} />
         ))}
       </div>
-      <div className="pInfoGMapContainer"></div>
+      <div className="pInfoGMapContainer">
+        {/* <SimpleMap /> */}
+        <iframe
+          src={mapURI}
+          height="300px"
+          width="250px"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
   );
 };

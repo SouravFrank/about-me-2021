@@ -30,7 +30,7 @@ const RenderItem = ({ props }) => {
   return (
     <div className="skillBox">
       <div className="skillIconBall">
-        <img class="skillSVG" alt={title} src={keysToSVG[src]} />
+        <img className="skillSVG" alt={title} src={keysToSVG[src]} />
       </div>
       <div className="SkillDesc">
         <span className="SkillDescTitle">{title}</span>
