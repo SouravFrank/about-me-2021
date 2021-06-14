@@ -20,7 +20,7 @@ function StickyNav(props) {
 
   return (
     <div
-      style={{ display: displayNav ? "inline" : "none" }}
+      style={{ display: displayNav ? "inline" : "none" , zIndex: 100 }}
       className="nav-container"
     >
       {/* <ListIcon /> */}

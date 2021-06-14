@@ -1,35 +1,35 @@
 export const timelineData = [
   {
     title: "Birth",
-    description: "Desc 1",
+    // description: "Desc 1",
     date: "23 June 1998",
     icon: "cake",
   },
   {
     title: "10th",
-    description: "Desc.",
-    date: "2 March 1994",
+    description: "Shibpur Dinobandhu Institution (Branch)",
+    date: "March 2013",
     icon: 'study'
   },
   {
     title: "12th",
-    description: "Desc 3",
-    date: "2 March 1995",
+    description: "Shibpur Dinobandhu Institution (Branch)",
+    date: "July 2015",
     icon: 'study'
 
   },
   {
     title: "B.Tech",
-    description: "Desc 4",
-    date: "2 March 1996",
+    description: "Electronics & Communication Engineering",
+    date: "June 2019",
     icon: 'study'
 
   },
   {
     title: "TCS",
     description: "Desc 5",
-    date: "2 March 1997",
-    icon: 'study'
+    date: "July 2019",
+    icon: 'work'
   },
   {
     title: "DevOps",
