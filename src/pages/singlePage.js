@@ -24,10 +24,13 @@ class SinglePage extends Component {
         <IntroPic />
         <IntroText />
         <RoadMap />
-        <DownloadResume />
         <Skills />
         <ScrollButton />
         <ContactMe />
+        <div style={{ position: "relative" }}>
+          <DownloadResume />
+          <DesignedByMe />
+        </div>
         <FooterBg />
       </div>
     );

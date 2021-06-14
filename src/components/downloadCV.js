@@ -40,9 +40,12 @@ const DownloadResume = () => {
   const props = { checked, setchecked, downloadResumeConfig };
 
   return (
-    <div id="resume" style={{ margin: "100px", position: "relative" }}>
+    <div
+      id="resume"
+      style={{ margin: "0 100px 0 100px", width: "90%", position: "relative" }}
+    >
       <Typewriter text={["Here is my Resume...", "Click to download..."]} />
-      <div style={{ position: "relative", margin: 100, paddingBottom: 280 }}>
+      <div style={{ position: "absolute", margin: 50, paddingBottom: 280 }}>
         <Download {...props} />
       </div>
     </div>
