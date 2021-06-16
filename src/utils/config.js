@@ -5,6 +5,14 @@ export const downloadResumeConfig = {
 };
 
 export const mySkills = [
+  { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages." },
+  { title: "CSS", src: "CssLogo", description: "Paint brush of webpages." },
+  {
+    title: "Javascript",
+    src: "JsLogo",
+    description: "Scripting language that enables interaction in webpages.",
+  },
+
   {
     title: "React JS",
     src: "ReactLogo",
@@ -13,45 +21,39 @@ export const mySkills = [
   {
     title: "React Native",
     src: "ReactLogo",
-    description:
-      " JavaScript framework for writing real, natively rendering mobile applications for iOS and Android",
+    description: "Native Mobile framework for Android, iOS.",
   },
   {
     title: "Node JS",
     src: "NodeLogo",
-    description:
-      "open-source, cross-platform, back-end JavaScript runtime environment",
+    description: "Runtime JS environment for building network apps.",
   },
   {
     title: "Redux",
     src: "ReduxLogo",
-    description:
-      "JavaScript library for managing application state in front end",
+    description: "Predictable state container for JavaScript apps.",
   },
   {
     title: "Material UI",
     src: "MaterialUILogo",
-    description:
-      "features React components that implement Google's Material Design",
+    description: "Customizable component library to build UI efficiently.",
   },
   {
     title: "Swagger",
     src: "SwaggerLogo",
     description:
-      "An Interface Description Language for describing RESTful APIs expressed using JSON.",
+      "An Interface Description Language for describing RESTful APIs.",
   },
-  { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages" },
-  { title: "CSS", src: "CssLogo", description: "Paint brush of webpages" },
+
   {
     title: "Linux",
     src: "LinuxLogo",
-    description:
-      "a family of open-source Unix-like operating systems based on the Linux kernel",
+    description: "Operating system connecting computer hardware & software.",
   },
   {
     title: "Git",
     src: "GitIcon",
-    description: "open source distributed version control system ",
+    description: "Open source distributed version control system ",
   },
 ];
 
@@ -59,7 +61,7 @@ export const myRoutes = [
   // { title: "Home", click: "#" },
   { title: "Journey", click: "#journey" },
   { title: "Skills ", click: "#skills" },
-  { title: "Projects ", click: "#projects" },
+  // { title: "Projects ", click: "#projects" },
   { title: "Contact", click: "#ContactMe" },
   { title: "Download Resume ", click: "#resume" },
 ];

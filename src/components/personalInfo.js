@@ -35,7 +35,7 @@ const RenderInfoCard = ({ title, value }) => {
 
 const PeronalInfo = () => {
   return (
-    <div className="pInfoContainer">
+    <div data-aos="slide-left" className="pInfoContainer">
       <div className="pInfoDetails">
         {myPersonalInfo.map((item) => (
           <RenderInfoCard {...item} />
@@ -45,8 +45,7 @@ const PeronalInfo = () => {
         {/* <SimpleMap /> */}
         <iframe
           src={mapURI}
-          height="300px"
-          width="250px"
+          className="mapStyle"
           allowfullscreen=""
           loading="lazy"
         ></iframe>

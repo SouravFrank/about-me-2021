@@ -1,6 +1,8 @@
 import React from "react";
 import MobilePage from "./pages/mobilePage";
 import SinglePage from "./pages/singlePage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 window.mobileCheck = function () {
   let check = false;
@@ -18,8 +20,11 @@ window.mobileCheck = function () {
   return check;
 };
 
-const App = () => (
-  <div>{window.mobileCheck() ? <MobilePage /> : <SinglePage />}</div>
-);
+const App = () => {
+  AOS.init({
+    duration: 2000,
+  });
+  return <div>{window.mobileCheck() ? <MobilePage /> : <SinglePage />}</div>;
+};
 
 export default App;
