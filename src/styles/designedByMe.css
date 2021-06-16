@@ -15,7 +15,8 @@
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  filter: drop-shadow(2px 1px 0 white) drop-shadow(-2px -1px 0 white)
+  transition: ease-in-out 0.5s;
+  filter: drop-shadow(1px 0.5px 0 white) drop-shadow(-1px -0.5px 0 white)
     brightness(100);
 }
 
