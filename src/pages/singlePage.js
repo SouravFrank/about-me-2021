@@ -11,6 +11,7 @@ import DownloadResume from "../components/downloadCV";
 import { HeaderBg, FooterBg } from "../components/background";
 import ContactMe from "../components/contactMe";
 import DesignedByMe from "../components/designedbyMe";
+import LoveIndia from "../components/loveIndia";
 
 import "../styles/common.css";
 
@@ -27,11 +28,14 @@ class SinglePage extends Component {
         <Skills />
         <ScrollButton />
         <ContactMe />
+        {/* <div style={{ position: "relative" }}>
+        </div> */}
         <div style={{ position: "relative" }}>
           <DownloadResume />
           <DesignedByMe />
+          <LoveIndia />
+          <FooterBg />
         </div>
-        <FooterBg />
       </div>
     );
   }
