@@ -42,7 +42,7 @@ export const mySkills = [
     title: "Swagger",
     src: "SwaggerLogo",
     description:
-      "An Interface Description Language for describing RESTful APIs.",
+      "Interface description language for describing RESTful APIs.",
   },
 
   {

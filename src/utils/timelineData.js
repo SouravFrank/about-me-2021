@@ -14,27 +14,33 @@ export const timelineData = [
   {
     title: "12th",
     description: "Shibpur Dinobandhu Institution (Branch)",
-    date: "July 2015",
+    date: "June 2013 - July 2015",
     icon: 'study'
 
   },
   {
     title: "B.Tech",
     description: "Electronics & Communication Engineering",
-    date: "June 2019",
+    date: "August 2015 - June 2019",
     icon: 'study'
 
   },
   {
     title: "TCS",
-    description: "Desc 5",
-    date: "July 2019",
+    description: "System Engineer",
+    date: "July 2019 - Present",
     icon: 'work'
   },
   {
     title: "DevOps",
-    description: "Desc 6",
-    date: "2 March 1998",
+    description: "ASDA (Walmart parent)",
+    date: "August 2019 - Febuary 2020",
+    icon: 'work'
+  },
+  {
+    title: "React Developer",
+    description: "ASDA (Walmart parent)",
+    date: "March 2020 - Present",
     icon: 'work'
   },
 ];
