@@ -49,7 +49,7 @@
   color: #d0d0d0;
 }
 .formInput:focus {
-  outline-color: #aaa0ff;
+  outline-color: var(--main-bg-color);
 }
 .formTextArea {
   resize: none;
@@ -66,7 +66,7 @@
   border-radius: 5px;
 }
 .formTextArea:focus {
-  outline-color: #aaa0ff;
+  outline-color: var(--main-bg-color);
 }
 .contactTitle {
   color: #3c3c3c;
@@ -103,8 +103,8 @@
   padding: 0.35em 1.5em;
   text-align: center;
   text-decoration: none;
-  color: #aaa0ff;
-  border: 2px solid #aaa0ff;
+  color: var(--main-bg-color);
+  border: 2px solid var(--main-bg-color);
   font-size: 24px;
   display: inline-block;
   border-radius: 4px;
@@ -125,9 +125,9 @@
   transition: none;
 }
 .button:hover {
-  background-color: #aaa0ff;
+  background-color: var(--main-bg-color);
   color: #fff;
-  border-bottom: 4px solid #aaa0ff;
+  border-bottom: 4px solid var(--main-bg-color);
   cursor: url("../assets/cursor-link.png"), auto;
 }
 .button:hover:before {

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import Typewriter from "./common/typewritter";
 import SocialMedia from "./socialmedia";
 import PeronalInfo from "./personalInfo";
@@ -34,6 +35,7 @@ const ContactForm = () => {
   const [name, setname] = useState("");
   const [contact, setcontact] = useState("");
   const [desc, setdesc] = useState("");
+  // const [state, handleSubmit] = useForm("mrgrlrvk");
   return (
     <div data-aos="slide-right" className="formContainer">
       <div className="nameContainer">
@@ -58,7 +60,11 @@ const ContactForm = () => {
         onChange={setdesc}
       />
       <div className="wrapper">
-        <a href="#" className="button">
+        <a
+          // disabled={state.submitting}
+          // onClick={handleSubmit}
+          className="button"
+        >
           Send Me
         </a>
       </div>

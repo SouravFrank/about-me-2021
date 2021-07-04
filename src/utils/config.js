@@ -41,8 +41,7 @@ export const mySkills = [
   {
     title: "Swagger",
     src: "SwaggerLogo",
-    description:
-      "Interface description language for describing RESTful APIs.",
+    description: "Interface description language for describing RESTful APIs.",
   },
 
   {
@@ -67,10 +66,27 @@ export const myRoutes = [
 ];
 
 export const myPersonalInfo = [
-  { title: "Email", value: "ssadhukhan990@gmail.com" },
-  { title: "Call", value: "+91 9038516950" },
-  { title: "Location", value: "Howrah, West Bengal, India" },
+  {
+    title: "Email",
+    value: "ssadhukhan990@gmail.com",
+    link: "mailto:ssadhukhan990@gmail.com",
+  },
+  { title: "Call", value: "+91 9038516950", link: "tel:+919038516950" },
+  {
+    title: "Location",
+    value: "Howrah, West Bengal, India",
+    link: "#locationMap",
+  },
 ];
 
 export const mapURI =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235813.7095530791!2d88.03585972386433!3d22.55705591699672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f88249be00ca5f%3A0x3f5496c42f4bd6e8!2sHowrah%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1623596867700!5m2!1sen!2sin";
+
+export const socialMediaLinks = {
+  facebook: "https://www.facebook.com/ssadhukhan990/",
+  instagram: "https://www.instagram.com/frank_2282/",
+  github: "https://github.com/SouravFrank",
+  linkedin: "https://www.linkedin.com/in/sourav-sadhukhan-990/",
+  whatsapp:
+    "https://api.whatsapp.com/send?phone=919038516950&text=Hi+Sourav+%21+Interested+in+your+portfolio+website.&lang=en",
+};

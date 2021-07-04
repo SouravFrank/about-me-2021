@@ -1,21 +1,24 @@
 #upArrow {
   width: 50px;
   height: 50px;
+  fill: var(--main-bg-color);;
 }
 
 .normal-container {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  margin: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  background-color: rgba(256,256,256,0.8);
+  border-radius: 50%;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 
 .normal-container:hover {
   padding-bottom: 20px;
-  background-color: darkblue;
 }
 
 .onHover-container {
@@ -28,11 +31,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 
 .onHover-container span {
   display: inline-block;
-  color: #aaa0ff;
+  color: var(--main-bg-color);
 }
 
 .onHover-container #Back {

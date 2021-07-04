@@ -53,7 +53,7 @@
     );
 }
 .social-btns .btn.instagram {
-  fill: #d9317a
+  fill: #d9317a;
 }
 .social-btns .btn.github:before {
   background-color: #211f1f;
