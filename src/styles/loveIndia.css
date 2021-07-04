@@ -10,14 +10,14 @@
   opacity: 0.8;
 }
 
-@media (max-width: 1920px) {
+@media (width: 1920px) {
   #loveIndiaContainer {
     right: 26.2vw;
     transform: rotate(-28deg);
   }
 }
 
-@media (max-width: 1080px) {
+@media (width: 1080px) {
   #loveIndiaContainer {
     right: 27.3vw;
     transform: rotate(-32deg);
