@@ -1,9 +1,20 @@
 {
   "homepage": "https://souravfrank.github.io/about-me/",
   "name": "about-me",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lintFix": "eslint --fix .",
+    "format": "prettier -w .",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@material-ui/core": "^4.11.1",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.12.0",
@@ -17,16 +28,8 @@
     "react-gsap": "^3.2.1",
     "react-hover": "^2.0.0",
     "react-scripts": "4.0.3",
+    "react-tooltip": "^4.2.21",
     "web-vitals": "^1.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lintFix": "eslint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,15 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.3.2"
   }
 }

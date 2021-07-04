@@ -19,7 +19,7 @@
   height: 89%;
   width: 2px;
   left: 50%;
-  background-color: #aaa0ff;
+  background-color: var(--main-bg-color);
 }
 
 .timeline ul {
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #aaa0ff;
+  border: 2px solid var(--main-bg-color);
   position: relative;
 }
 
@@ -60,7 +60,7 @@
 .pointIcon {
   height: 20px;
   width: 20px;
-  color: #aaa0ff;
+  color: var(--main-bg-color);
 }
 
 /* align with middle line */
@@ -92,20 +92,16 @@
   width: 20rem;
   padding: 0px 20px;
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--main-bg-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: white;
-}
-
-.timeline .card:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--main-bg-color);
 }
 
 .timeline .card .title {
   font-size: 24px;
   font-weight: bold;
-  color: #3a3a3a;
+  color: white;
   margin: 5px 0px 0px;
 }
 
@@ -114,12 +110,26 @@
   font-weight: 500;
   margin: 0px 0px 2px;
   font-style: italic;
-  color: #aaa0ff;
+  color: white;
 }
 
 .timeline .card .desc {
   font-size: 1rem;
   margin: 0px 0px 10px;
+  color: white;
+}
+
+.timeline .card:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  transition: 500ms;
+}
+
+.timeline .card:hover .desc,
+.timeline .card:hover .date,
+.timeline .card:hover .title {
+  color: var(--main-bg-color);
+  transition: 500ms;
 }
 
 .timeline ul li:nth-child(even) {
@@ -128,6 +138,38 @@
 
 .timeline ul li:nth-child(odd) {
   text-align: end;
+}
+
+.timeline ul li:last-child .card,
+.timeline ul li:nth-last-child(2) .card {
+  background-color: white;
+}
+
+.timeline ul li:last-child .date,
+.timeline ul li:last-child .title,
+.timeline ul li:last-child .desc,
+.timeline ul li:nth-last-child(2) .date,
+.timeline ul li:nth-last-child(2) .title,
+.timeline ul li:nth-last-child(2) .desc {
+  color: var(--main-bg-color);
+}
+
+.timeline ul li:last-child .card:hover,
+.timeline ul li:nth-last-child(2) .card:hover {
+  background-color: var(--main-bg-color);
+}
+
+.timeline ul li:last-child .card:hover .date,
+.timeline ul li:last-child .card:hover .title,
+.timeline ul li:last-child .card:hover .desc,
+.timeline ul li:nth-last-child(2) .card:hover .date,
+.timeline ul li:nth-last-child(2) .card:hover .title,
+.timeline ul li:nth-last-child(2) .card:hover .desc {
+  color: white;
+}
+
+.timeline ul li:nth-last-child(3) .card {
+  border: 1px solid var(--dark-shade-color);
 }
 
 /* -------------------------------------------------------------------------- */

@@ -1,5 +1,5 @@
 import React from "react";
-import myPic from "../../assets/sourav-pic.jpeg";
+import myPic from "../../assets/sourav_Dp.jpg";
 import "../../styles/mobile/mobilePage.css";
 
 const IntroPicMobile = (props) => {

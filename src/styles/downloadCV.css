@@ -7,7 +7,7 @@ a {
   width: 120px;
   height: 40px;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: var(--main-bg-color);
   text-align: center;
   color: aliceblue;
   justify-content: center;
@@ -17,7 +17,7 @@ a {
 }
 
 .downloadBtn:hover {
-  background-color: #aaa0ff;
+  background-color: var(--main-bg-color);
   box-shadow: 2px 5px #888888;
   cursor: url("../assets/cursor-link.png"), auto;
 }
@@ -76,7 +76,7 @@ a {
   margin: auto;
   width: 10px;
   height: 125px;
-  background: #aaa0ff;
+  background: var(--main-bg-color);
   border-radius: 50px;
   transition: height 0.5s ease;
 }
@@ -138,7 +138,7 @@ a {
   width: 10px;
   height: 75px;
   bottom: -10px;
-  background: #aaa0ff;
+  background: var(--main-bg-color);
   border-radius: 50px;
   transition: transform 0.15s ease 0.47s, left 0.15s ease 0.47s,
     right 0.15s ease 0.47s;
@@ -202,6 +202,6 @@ a {
     border: 10px solid transparent;
   }
   100% {
-    border: 10px solid #aaa0ff;
+    border: 10px solid var(--main-bg-color);
   }
 }

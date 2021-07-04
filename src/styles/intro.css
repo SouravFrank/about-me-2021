@@ -3,6 +3,9 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
   }
+  5% {
+    opacity: 0.8; 
+  }
   10% {
     opacity: 1;
     transform: translate(0%, 0%) scale(1);
@@ -22,6 +25,7 @@
 }
 
 .intro-text {
+  z-index: 5;
   animation-name: stretch;
   animation-duration: 7s;
   animation-timing-function: ease-in-out;
@@ -38,13 +42,13 @@
 }
 @keyframes changeSalutation {
   0% {
-    content: "My name is";
+    content: "Hi I am";
   }
   99% {
-    content: "I am also a";
+    content: "I love to";
   }
   100% {
-    content: "My name is";
+    content: "Hi I am";
   }
 }
 
@@ -58,7 +62,7 @@
     content: "Sourav Sadhukhan";
   }
   99% {
-    content: "Graphics Designer";
+    content: "Design Graphics";
   }
   100% {
     content: "Sourav Sadhukhan";
@@ -71,20 +75,20 @@
 }
 @keyframes changeDesc {
   0% {
-    content: "I am a full-stack web developer and also a graphics designer who loves to design via CSS or Photoshop.";
+    content: "I'm a full-stack web developer that who enjoys designing using CSS and Photoshop.";
   }
   99% {
-    content: "My main areas of expertise include Javascript, Typescript, Node.js, HTML, CSS, php and Python.";
+    content: "HTML, CSS, Javascript, React js, React Native, and Node js are my areas of competence.";
   }
   100% {
-    content: "I am a full-stack web developer and also a graphics designer who loves to design via CSS or Photoshop.";
+    content: "I'm a full-stack web developer that who enjoys designing using CSS and Photoshop.";
   }
 }
 
 .meter {
   height: 5px;
   position: relative;
-  z-index: 0.5;
+  z-index: -1;
   background: rgba(240, 240, 240, 0.397);
   animation: progress 7s ease-in infinite;
 }
@@ -111,7 +115,7 @@
 .meter > span {
   display: block;
   height: 100%;
-  background-color: rgb(30, 148, 245);
+  background-color: var(--main-bg-color);
   box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
   position: relative;

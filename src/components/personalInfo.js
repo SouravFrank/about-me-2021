@@ -17,13 +17,18 @@ const RenderIcon = ({ icon }) => {
   if (typeof iconMap[icon] !== "undefined") {
     return React.createElement(iconMap[icon], {
       className: "iamIcon",
+      style: {fill: '#01579b'}
     });
   }
 };
 
-const RenderInfoCard = ({ title, value }) => {
+const RenderInfoCard = ({ title, value, link }) => {
   return (
-    <div className="showInfoBox">
+    <div
+      className="showInfoBox"
+      onClick={() => (window.location.href = link)}
+      className="showInfoBox"
+    >
       <RenderIcon icon={title} />
       <div className="showMoreInfoBox">
         <span id="title">{title}</span>

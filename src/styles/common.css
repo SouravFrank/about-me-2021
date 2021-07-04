@@ -17,7 +17,7 @@ section #roadmap {
   height: 0;
   width: 0;
   border-right: 85vw solid transparent;
-  border-top: 100vh solid #aaa0ff;
+  border-top: 100vh solid var(--main-bg-color);
 }
 
 .footerBg {
@@ -26,7 +26,7 @@ section #roadmap {
   float: right;
   right: -20px;
   border-left: 85vw solid transparent;
-  border-bottom: 80vh solid #aaa0ff;
+  border-bottom: 80vh solid var(--main-bg-color);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -64,6 +64,6 @@ section #roadmap {
     background-color: transparent;
   }
   50% {
-    background-color: #aaa0ff;
+    background-color: var(--main-bg-color);
   }
 }

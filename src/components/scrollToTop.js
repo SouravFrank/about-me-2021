@@ -29,13 +29,13 @@ const ScrollButton = () => {
 
   const BeforeHover = () => (
     <div className="normal-container">
-      <ArrowUp id="upArrow" fill="#afdaff" />
+      <ArrowUp id="upArrow"  />
     </div>
   );
 
   const AfterHover = () => (
     <div className="onHover-container">
-      <ArrowUp id="upArrow" fill="#aaa0ff" />
+      <ArrowUp id="upArrow"  />
       <span id="Back">Back</span>
       <span id="top">to top</span>
       <span id="qus">?</span>

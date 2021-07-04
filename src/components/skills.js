@@ -34,7 +34,6 @@ const RenderItem = ({ index, props }) => {
       : (index + 1) % 3 === 0
       ? "fade-left"
       : "fade-right";
-  console.log("aosStyle: ", aosStyle);
   return (
     <div data-aos={aosStyle} className="card2">
       <div className="skillIconBall">
