@@ -90,3 +90,9 @@ export const socialMediaLinks = {
   whatsapp:
     "https://api.whatsapp.com/send?phone=919038516950&text=Hi+Sourav+%21+Interested+in+your+portfolio+website.&lang=en",
 };
+
+export const emailServices = {
+  YOUR_SERVICE_ID: "service_jezeghg",
+  YOUR_TEMPLATE_ID: "template_d4gmiui",
+  YOUR_USER_ID: "user_epY833fuoFrViHPfmPlAj",
+};
