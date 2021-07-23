@@ -1,7 +1,7 @@
 export const downloadResumeConfig = {
   fileName: "resume.pdf",
   fileLink:
-    "https://drive.google.com/uc?export=download&id=1K8xduNWYajt9PtRl-S6WvtqFxcIi60bB",
+    "https://drive.google.com/uc?export=download&id=1VMSaohbiMiqfGKptPahPQbL074HqNbOx",
 };
 
 export const mySkills = [
