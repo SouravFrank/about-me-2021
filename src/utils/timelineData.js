@@ -26,19 +26,15 @@ export const timelineData = [
   {
     title: "TCS",
     description: "Software Developer",
-    date: "July 2019 - Present",
+    date: "July 2019 - November 2021",
     icon: "work",
+    role: "React Developer",
   },
   {
-    title: "DevOps Engineer",
-    description: "ASDA (Walmart parent)",
-    date: "August 2019 - Febuary 2020",
+    title: "Fareportal",
+    description: "Sr Software Developer",
+    date: "November 2021 - Present",
     icon: "work",
-  },
-  {
-    title: "React Developer",
-    description: "ASDA (Walmart parent)",
-    date: "March 2020 - Present",
-    icon: "work",
+    role: "Mobile App Developer",
   },
 ];
