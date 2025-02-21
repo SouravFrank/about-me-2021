@@ -1,6 +1,59 @@
-# Getting Started with Create React App
+# Sourav Sadhukhan Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Portfolio Banner](https://via.placeholder.com/1200x300?text=Portfolio+Website)
+
+This is the source code for my modern portfolio website created in 2021. Over the years I’ve refined my style and tech stack; you can check out the latest version [here](https://github.com/SouravFrank/about_me_v2).
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
+## Overview
+
+This project is a personal portfolio website built with React. It showcases my journey, skills, projects, and contact information through a sleek, interactive design with modern animations and responsive layouts.
+
+---
+
+## Features
+
+- **Responsive Design:** Optimized for mobile and desktop.
+- **Interactive Animations:** Utilizing AOS and GSAP for smooth animations.
+- **Dynamic Content:** Showcases project timelines, skills, and contact forms.
+- **Modern UI Components:** With Material-UI and custom CSS for a polished look.
+
+---
+
+## Tech Stack
+
+- **React** – Front-end library
+- **React Scripts** – Build and development environment
+- **Material-UI** – UI Components and icons
+- **GSAP & AOS** – Animations and scroll effects
+- **Google Map React** – Embedded interactive maps
+- **EmailJS API** – Form handling for dynamic emails
+
+---
+
+## Getting Started
+
+First, clone the repository and install the dependencies:
+
+```sh
+git clone https://github.com/SouravFrank/about-me.git
+cd about-me
+npm install
+```
 
 ## Available Scripts
 
@@ -39,32 +92,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+## Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Author:** Sourav Sadhukhan
+- **Design Inspiration:** Various online portfolios and design resources
+- **Special Thanks:** To all the open-source contributors
