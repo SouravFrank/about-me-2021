@@ -1,6 +1,6 @@
 # Sourav Sadhukhan Portfolio Website
 
-![Portfolio Banner](https://via.placeholder.com/1200x300?text=Portfolio+Website)
+![Portfolio Banner](./souravfrank.github.io_about-me-2021_.png)
 
 This is the source code for my modern portfolio website created in 2021. Over the years I’ve refined my style and tech stack; you can check out the latest version [here](https://github.com/SouravFrank/about_me_v2).
 
