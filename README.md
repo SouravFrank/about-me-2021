@@ -27,7 +27,6 @@ This project is a personal portfolio website built with React. It showcases my j
 
 ## Features
 
-- **Responsive Design:** Optimized for mobile and desktop.
 - **Interactive Animations:** Utilizing AOS and GSAP for smooth animations.
 - **Dynamic Content:** Showcases project timelines, skills, and contact forms.
 - **Modern UI Components:** With Material-UI and custom CSS for a polished look.
@@ -67,10 +66,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 

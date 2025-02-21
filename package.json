@@ -1,11 +1,11 @@
 {
-  "homepage": "https://souravfrank.github.io/about-me/",
+  "homepage": "https://souravfrank.github.io/about-me-2021/",
   "name": "about-me",
   "version": "0.1.7",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lintFix": "eslint --fix .",
